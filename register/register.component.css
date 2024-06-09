@@ -1,0 +1,26 @@
+body{
+    border: 1.5rem solid;
+    border-image: linear-gradient(#24d3f1, #4752f0) 1;
+    padding: 0.75rem;
+    background-color: #f0f8ff;
+    color: white;
+}
+.register-container{
+    width: 100%;
+    margin: 1rem auto;
+    align-items: center;
+    background-image: url('src/assets/background-image_1.jpg');
+    padding: 5rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.register-container h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}

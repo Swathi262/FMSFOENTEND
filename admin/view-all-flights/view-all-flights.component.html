@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flights</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+ 
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+      }
+ 
+      .flights-table {
+        margin: 0 auto;
+        max-width: 800px;
+      }
+ 
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+ 
+      th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+ 
+      th {
+        background-color: #6b6666;
+        font-weight: bold;
+      }
+ 
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><b>Flights</b></h1>
+    <div class="flights-table">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Flight Id</th>
+            <th scope="col">Flight Name</th>
+            <th scope="col">Source</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Departure</th>
+            <th scope="col">Arrival</th>
+            <th scope="col">Seats Available</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let flight of flights">
+            <td>{{ flight.flightId }}</td>
+            <td>{{ flight.flightName }}</td>
+            <td>{{ flight.source }}</td>
+            <td>{{ flight.destination }}</td>
+            <td>{{ flight.departure }}</td>
+            <td>{{ flight.arrival }}</td>
+            <td>{{ flight.seats }}</td>
+            <td>{{ flight.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+ 

@@ -1,0 +1,30 @@
+body {
+  border: 1.5rem solid;
+  border-image: linear-gradient(#24d3f1, #4752f0) 1;
+  padding: 0.75rem;
+  background-color: #f0f8ff;
+}
+
+.signin-container {
+  width: 100%;
+  margin: 1rem auto;
+  align-items: center;
+  height: 80vh;
+  background-image: url('src/assets/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signin-container h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+}
+
+form {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+

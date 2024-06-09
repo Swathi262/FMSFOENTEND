@@ -1,0 +1,12 @@
+body{
+  border: 1.5rem solid;
+  border-image: linear-gradient(#24d3f1, #4752f0) 1;
+  padding: 0.75rem;
+  background-color: #f0f8ff;
+  /* height: 100vh; */
+}
+
+.checkIn-container {
+  width: 600px;
+  margin: 30px auto;
+}

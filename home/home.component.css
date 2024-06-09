@@ -1,0 +1,213 @@
+
+.home-container{
+  border: 1.5rem solid;
+  border-image: linear-gradient(#24d3f1, #4752f0) 1;
+  padding: 0.75rem;
+}
+
+.primary-logo {
+  margin: 0.75rem;
+  width: 85px;
+  height: 70px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3a3a;
+}
+
+.items-container {
+  margin-right: 1rem;
+}
+
+.items-container ul {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.items-container ul li {
+  margin-left: 2.5rem;
+  list-style: none;
+}
+
+.items-container ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  border: 2px solid white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.items-container ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.main-container {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 635px;
+  background: url('src\assets\main-background.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  color: #fff;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text {
+  font-size: 1.25rem;
+  margin: 20px 0;
+  width: 50%;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.icons-container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  row-gap: 2rem;
+}
+
+.icon-container{
+  width: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.img-container img {
+  width: 150px;
+  height: 150px;
+}
+
+.text-container p{
+  font-size: 1.1rem;
+}
+
+
+/* Container styles with linear gradient background */
+.news-section {
+  color: black;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.news-section img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+/* Title styles */
+.news-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 0.5rem auto;
+}
+
+.divider {
+  height: 0.35rem;
+  width: 20%;
+  background: linear-gradient(to left, #24d3f1, #4752f0);
+  margin: 0 auto 1.5rem auto;
+}
+
+/* News articles container styles using flexbox */
+.news-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* News article styles */
+.news-article {
+  padding: 20px;
+  border: 5px solid;
+  border-image: linear-gradient(#24d3f1, #4752f0) 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  flex: 1;
+}
+
+.news-article h2 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.news-article p {
+  font-size: 16px;
+  margin: 10px 0;
+  height: 180px;
+  text-align: justify;
+}
+
+.read-more {
+  display: block;
+  text-align: right;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+/* Old Styles Below this Comment */
+
+.navbar-text {
+  margin-right: 30px;
+}
+
+.register-in-button {
+  margin-left: 20px;
+}
+
+.home-body-container {
+  margin: 50px 30px;
+}
+
+.navbar-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  width: 400px;
+}
+
+.name-content-nav{
+  display: flex;
+  flex-direction: column;
+}

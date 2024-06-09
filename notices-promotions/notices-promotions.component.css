@@ -1,0 +1,35 @@
+.dest-container h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 0.5rem auto;
+}
+
+.divider {
+  height: 0.35rem;
+  width: 10%;
+  background: linear-gradient(to left, #24d3f1, #4752f0);
+  margin: 0 auto 1.5rem auto;
+}
+
+.home-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: #4752f0 0px 4px 16px 0px;
+}
+
+.card-text{
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  margin-bottom: 1rem;
+}

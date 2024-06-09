@@ -1,0 +1,21 @@
+/* CSS for the footer */
+footer {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    max-width: 125px;
+  }
+  
+  .footer-text {
+    font-size: 24px;
+    width: 50%;
+    margin: 10px auto;
+  }
+  
+  .contact-info {
+    font-size: 16px;
+  }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div ngClass="home-container">
+      <!-- <nav class="navbar navbar-light bg-light">
+        
+        <span class="navbar-text" *ngIf="userName === null">
+          <form class="form-inline">
+            <button class="btn btn-primary" type="button" routerLink="/signin">
+              Sign In
+            </button>
+            <button
+              class="btn btn-secondary register-in-button"
+              type="button"
+              routerLink="/register"
+            >
+              Register
+            </button>
+          </form>
+        </span>
+        <span class="navbar-text" *ngIf="userName != null">
+          <div class="name-content-nav">
+            <a style="font-size: 0.9rem">Welcome</a>
+            <a style="color: green" routerLink="profile">{{ name }}</a>
+          </div>
+          <a class="nav-link" routerLink="showBookings">My Bookings</a>
+          <button class="btn btn-danger" type="button" (click)="handleLogout()">
+            Logout
+          </button>
+        </span>
+      </nav> -->
+
+      <app-nav-bar></app-nav-bar>
+
+      <div class="main-container">
+        <div class="content">
+          <h1 class="heading">THE SKY IS WAITING FOR YOU ✈</h1>
+          <p class="text">
+            Beckoning with boundless opportunities to explore the world. At our
+            flight ticket booking website, we are your trusted wings to take
+            flight into a world of adventure, discovery, and unforgettable
+            experiences.
+          </p>
+          <a href="/flights" class="button">Book Now</a>
+        </div>
+      </div>
+
+      <div class="icons-container">
+        <div class="icon-container">
+          <div class="img-container">
+            <img src=".\assets\flight-icon.png" alt="" />
+          </div>
+          <div class="text-container">
+            <h5>Budget-Friendly and Rewarding Flights</h5>
+            <p>
+              Discover unbeatable deals on flights that won't break the bank
+              while offering a rewarding travel experience.
+            </p>
+          </div>
+        </div>
+        <div class="icon-container">
+          <div class="img-container">
+            <img src=".\assets\payment-icon.png" alt="" />
+          </div>
+          <div class="text-container">
+            <h5>Experience Hassle-Free Payment with Us</h5>
+            <p>
+              Enjoy seamless transactions and worry-free payments with our
+              user-friendly system.
+            </p>
+          </div>
+        </div>
+        <div class="icon-container">
+          <div class="img-container">
+            <img src=".\assets\support-icon.png" alt="" />
+          </div>
+          <div class="text-container">
+            <h5>We are available 24/7 to assist you</h5>
+            <p>
+              Day or night, whenever you need assistance, our dedicated team is
+              here for you. We're committed to providing 24/7 support.
+            </p>
+          </div>
+        </div>
+        <div class="icon-container">
+          <div class="img-container">
+            <img src=".\assets\pass-icon.png" alt="" />
+          </div>
+          <div class="text-container">
+            <h5>Access Your Boarding Passes Instantly</h5>
+            <p>
+              Seamless travel begins the moment you confirm your booking with
+              immediate access to your boarding passes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-section">
+        <h2 class="news-title">Latest News and Updates</h2>
+        <div class="divider"></div>
+        <div class="news-articles">
+          <img src="./assets/backward-button.png" alt="" />
+          <div class="news-article">
+            <h2>New Travel Guidelines</h2>
+            <p>
+              Stay informed about the latest travel guidelines and safety
+              measures. Your safety is our top priority, and we are here to make
+              your journey worry-free. Learn more about the latest updates in
+              our comprehensive guide.
+            </p>
+            <a class="read-more" href="#">Read More ></a>
+          </div>
+
+          <div class="news-article">
+            <h2>Exploring Hidden Gems</h2>
+            <p>
+              Discover lesser-known travel destinations and hidden gems around
+              the world. Our travel experts share insights and tips for
+              unforgettable adventures off the beaten path.
+            </p>
+            <a class="read-more" href="#">Read More ></a>
+          </div>
+
+          <div class="news-article">
+            <h2>Travel Discounts Galore</h2>
+            <p>
+              Get ready for your next adventure with exclusive travel discounts
+              and offers. Save big on flights, hotels, and more when you book
+              through our platform.
+            </p>
+            <a class="read-more" href="#">Read More ></a>
+          </div>
+
+          <div class="news-article">
+            <h2>Top Travel Destinations 2023</h2>
+            <p>
+              Plan your 2023 getaways with our list of top travel destinations.
+              From exotic beaches to cultural wonders, we've got you covered.
+            </p>
+            <a class="read-more" href="#">Read More ></a>
+          </div>
+          <img src="./assets/forward-button.png" alt="" />
+        </div>
+      </div>
+
+      <div class="home-body-container">
+        <app-notices-promotions />
+      </div>
+
+      <app-footer></app-footer>
+    </div>
+  </body>
+</html>

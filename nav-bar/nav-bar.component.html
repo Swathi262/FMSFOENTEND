@@ -1,0 +1,30 @@
+<nav ngClass="nav-container">
+  <a class="navbar-brand" href="#">
+    <img
+      ngClass="primary-logo"
+      src="./assets/favicon7.png"
+      class="d-inline-block align-top"
+      alt=""
+    />
+  </a>
+
+  <div class="items-container">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="/flights">Search Flights🔍</a></li>
+      <li *ngIf="userName === null"><a href="/signin">Log in</a></li>
+      <li *ngIf="userName === null"><a href="/register">Register</a></li>
+      <li *ngIf="userName != null">
+        <a style="font-size: 0.9rem" href="/profile">Welcome, {{ name }}</a>
+      </li>
+      <li *ngIf="userName != null">
+        <a class="nav-link" routerLink="showBookings">My Bookings</a>
+      </li>
+      <li *ngIf="userName != null">
+        <button class="btn btn-danger" type="button" (click)="handleLogout()">
+          Logout
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

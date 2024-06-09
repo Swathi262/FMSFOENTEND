@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Dashboard </title>
+
+    <style>
+
+      body {
+
+        font-family: Arial, sans-serif;
+
+        background-color: #f0f0f0;
+
+        margin: 0;
+
+        padding: 0;
+
+      }
+
+ 
+
+      .navbar {
+
+        background-color: #007acc;
+
+        color: #fff;
+
+        padding: 0px;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+      }
+
+ 
+
+      .navbar-brand {
+
+        margin-left: 20px;
+
+      }
+
+ 
+
+      .navbar-message {
+
+        margin-right: 20px;
+
+      }
+
+ 
+
+      .admin-cards-container {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        flex-wrap: no-wrap;
+
+        margin: 20px;
+
+      }
+
+ 
+
+      .card {
+
+        width: 18rem;
+
+        border: 1px solid #ccc;
+
+        border-radius: 5px;
+
+        background-color: #fff;
+
+      }
+      .card-title {
+
+        background-color: #007acc;
+
+        color: #fff;
+
+        padding: 10px;
+
+        margin: 0;
+
+        border-radius: 5px 5px 0 0;
+
+      }
+      .card-body {
+
+        padding: 20px;
+
+      }
+
+      .navbar-message {
+
+        margin-right: 20px;
+
+        font-size: 24px; /* Adjust the font size as needed */
+
+      }
+
+ 
+
+      .card-link {
+
+        color: #007acc;
+
+        text-decoration: none;
+
+      }
+
+ 
+
+      .card-link:hover {
+
+        text-decoration: underline;
+
+      }
+
+ 
+
+      .btn-logout {
+
+        background-color: #d9534f;
+
+        border-color: #d43f3a;
+
+        color: #fff;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+
+      <a class="navbar-brand" href="#">
+
+        <img
+
+          src="./assets/favicon7.png"
+
+          width="85"
+
+          height="85"
+
+          alt=""
+
+        />
+
+      </a>
+      <span class="navbar-message">Welcome to Admin Dashboard 👨‍💼</span>
+      <span class="navbar-text" *ngIf="userName != null">
+        <button class="btn btn-logout" type="button" (click)="handleLogout()">
+          Logout
+        </button>
+      </span>
+    </nav>
+   
+    <div class="admin-cards-container">
+
+      <!-- Cards go here as in the previous example -->
+
+     
+
+      <div class="card">
+
+        <img
+
+          src="./assets/addFlight.png"
+
+          alt="Add Flight"
+
+          style="width: 100%"
+
+        />
+
+        <h5 class="card-title">Add Flight to Database</h5>
+
+        <div class="card-body">
+
+          <a href="adminPanel/addFlight" class="card-link">Add</a>
+
+        </div>
+
+      </div>
+
+     &nbsp; &nbsp; &nbsp; &nbsp; 
+
+      <div class="card">
+
+        <img
+
+          src="./assets/types.png"
+
+          alt="View All Flights"
+
+          style="width: 100%"
+
+        />
+
+        <h5 class="card-title">View All Flights</h5>
+
+        <div class="card-body">
+
+          <a href="adminPanel/viewAllFlights" class="card-link">View</a>
+
+        </div>
+
+      </div>
+
+     
+      &nbsp; &nbsp; &nbsp; &nbsp; 
+      <div class="card">
+
+        <img
+
+          src="./assets/deleteFlight.png"
+
+          alt="Delete Flight"
+
+          style="width: 100%"
+
+        />
+
+        <h5 class="card-title">Delete Flight</h5>
+
+        <div class="card-body">
+
+          <a href="adminPanel/deleteFlight" class="card-link">Delete</a>
+
+        </div>
+
+      </div>
+
+      &nbsp; &nbsp; &nbsp; &nbsp; 
+
+
+      <div class="card">
+
+        <img
+
+          src="./assets/deleteUser.png"
+
+          alt="View User"
+
+          style="width: 100%"
+
+        />
+
+        <h5 class="card-title">View User</h5>
+
+        <div class="card-body">
+
+          <a href="adminPanel/viewUser" class="card-link">View User</a>
+
+        </div>
+
+      </div>
+
+ 
+      &nbsp; &nbsp; &nbsp; &nbsp; 
+      <div class="card">
+
+        <img
+
+          src="./assets/viewUsers.png"
+
+          alt="View User"
+
+          style="width: 100%"
+
+        />
+
+        <h5 class="card-title">View All Users</h5>
+
+        <div class="card-body">
+
+          <a href="viewAllUsers" class="card-link">ViewAll</a>
+
+        </div>
+        
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
+
+ 
